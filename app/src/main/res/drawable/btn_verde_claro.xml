@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#A5D6A7"/> <!-- Verde más fuerte al presionar -->
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#C8E6C9"/> <!-- Verde claro normal -->
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+</selector>

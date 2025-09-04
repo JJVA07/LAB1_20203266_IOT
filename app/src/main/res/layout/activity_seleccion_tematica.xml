@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#444444"
+        android:elevation="4dp"
+        android:padding="12dp">
+
+        <!-- Botón retroceder -->
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Volver"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/white"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Texto centrado -->
+        <TextView
+            android:id="@+id/tvNombreApp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TeleQuiz"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+        <!-- Botón perfil -->
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Perfil"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/white"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Nombre jugador -->
+        <TextView
+            android:id="@+id/tvNombreJugador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido, Jugador"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Texto guía -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona una temática:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Botón Redes -->
+        <Button
+            android:id="@+id/btnRedes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="🌐 Redes"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+        <!-- Botón Ciberseguridad -->
+        <Button
+            android:id="@+id/btnCiberseguridad"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="🔒 Ciberseguridad"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#FF5722"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+        <!-- Botón Microondas -->
+        <Button
+            android:id="@+id/btnMicroondas"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="📡 Microondas"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#9C27B0"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>
